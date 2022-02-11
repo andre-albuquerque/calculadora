@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fundo">
+    <div>
+        <h1 class = 'titulos' id='titulo'>Calculadora simples</h1>
+        <h2 class = 'titulos' id='sub-titulo'>HTML, CSS e JavaScript</h2>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id='resultado'></p>
+            <table class='tabela'>
+                <tr>
+                    <td><button class="botao" onclick="clean()">c</button></td>
+                    <td><button class="botao" onclick="erase()">&#60;</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert(7)">7</button></td>
+                    <td><button class="botao" onclick="insert(8)">8</button></td>
+                    <td><button class="botao" onclick="insert(9)">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert(4)">4</button></td>
+                    <td><button class="botao" onclick="insert(5)">5</button></td>
+                    <td><button class="botao" onclick="insert(6)">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert(1)">1</button></td>
+                    <td><button class="botao" onclick="insert(2)">2</button></td>
+                    <td><button class="botao" onclick="insert(3)">3</button></td>
+                    <td rowspan="2"><button class="botao" id='botao-altura' onclick="conta()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" id='botao-largura' onclick="insert(0)">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/andre-albuquerque" target="_blank">André de Albuquerque</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
